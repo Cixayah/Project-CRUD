@@ -32,25 +32,25 @@
             label1 = new Label();
             txtName = new TextBox();
             btnAdd = new Button();
-            maskedTextBox1 = new MaskedTextBox();
-            btnSalvar = new Button();
-            btnBuscar = new Button();
-            btnEditar = new Button();
-            btnApagar = new Button();
+            txtMaskPhone = new MaskedTextBox();
+            btnSave = new Button();
+            btnSearch = new Button();
+            btnEdit = new Button();
+            btnDelete = new Button();
             label2 = new Label();
             label3 = new Label();
             txtEmail = new TextBox();
             label4 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            txtAddress = new TextBox();
+            txtNumber = new TextBox();
             label5 = new Label();
             imageList1 = new ImageList(components);
             label7 = new Label();
-            textBox5 = new TextBox();
+            txtBurgh = new TextBox();
             label10 = new Label();
             label9 = new Label();
-            maskedTextBox2 = new MaskedTextBox();
-            maskedTextBox3 = new MaskedTextBox();
+            txtMaskRg = new MaskedTextBox();
+            txtMaskCpf = new MaskedTextBox();
             SuspendLayout();
             // 
             // label1
@@ -77,74 +77,74 @@
             btnAdd.Font = new Font("Cascadia Code", 9F);
             btnAdd.ForeColor = Color.FromArgb(255, 121, 198);
             btnAdd.ImageKey = "add.png";
-            btnAdd.Location = new Point(191, 256);
+            btnAdd.Location = new Point(131, 256);
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(87, 23);
             btnAdd.TabIndex = 2;
             btnAdd.TabStop = false;
             btnAdd.Text = "Adicionar";
             btnAdd.UseVisualStyleBackColor = true;
-            btnAdd.Click += btnAdd_Click;
             // 
-            // maskedTextBox1
+            // txtMaskPhone
             // 
-            maskedTextBox1.Location = new Point(191, 97);
-            maskedTextBox1.Mask = "(00)00000-0000";
-            maskedTextBox1.Name = "maskedTextBox1";
-            maskedTextBox1.Size = new Size(94, 23);
-            maskedTextBox1.TabIndex = 1;
+            txtMaskPhone.Location = new Point(191, 97);
+            txtMaskPhone.Mask = "(00)00000-0000";
+            txtMaskPhone.Name = "txtMaskPhone";
+            txtMaskPhone.Size = new Size(94, 23);
+            txtMaskPhone.TabIndex = 1;
             // 
-            // btnSalvar
+            // btnSave
             // 
-            btnSalvar.FlatStyle = FlatStyle.Popup;
-            btnSalvar.Font = new Font("Cascadia Code", 9F);
-            btnSalvar.ForeColor = Color.FromArgb(255, 121, 198);
-            btnSalvar.Location = new Point(284, 256);
-            btnSalvar.Name = "btnSalvar";
-            btnSalvar.Size = new Size(75, 23);
-            btnSalvar.TabIndex = 4;
-            btnSalvar.TabStop = false;
-            btnSalvar.Text = "Salvar";
-            btnSalvar.UseVisualStyleBackColor = true;
+            btnSave.FlatStyle = FlatStyle.Popup;
+            btnSave.Font = new Font("Cascadia Code", 9F);
+            btnSave.ForeColor = Color.FromArgb(255, 121, 198);
+            btnSave.Location = new Point(224, 256);
+            btnSave.Name = "btnSave";
+            btnSave.Size = new Size(75, 23);
+            btnSave.TabIndex = 4;
+            btnSave.TabStop = false;
+            btnSave.Text = "Salvar";
+            btnSave.UseVisualStyleBackColor = true;
+            btnSave.Click += btnSave_Click;
             // 
-            // btnBuscar
+            // btnSearch
             // 
-            btnBuscar.FlatStyle = FlatStyle.Popup;
-            btnBuscar.Font = new Font("Cascadia Code", 9F);
-            btnBuscar.ForeColor = Color.FromArgb(255, 121, 198);
-            btnBuscar.Location = new Point(365, 256);
-            btnBuscar.Name = "btnBuscar";
-            btnBuscar.Size = new Size(75, 23);
-            btnBuscar.TabIndex = 5;
-            btnBuscar.TabStop = false;
-            btnBuscar.Text = "Buscar";
-            btnBuscar.UseVisualStyleBackColor = true;
+            btnSearch.FlatStyle = FlatStyle.Popup;
+            btnSearch.Font = new Font("Cascadia Code", 9F);
+            btnSearch.ForeColor = Color.FromArgb(255, 121, 198);
+            btnSearch.Location = new Point(305, 256);
+            btnSearch.Name = "btnSearch";
+            btnSearch.Size = new Size(75, 23);
+            btnSearch.TabIndex = 5;
+            btnSearch.TabStop = false;
+            btnSearch.Text = "Buscar";
+            btnSearch.UseVisualStyleBackColor = true;
             // 
-            // btnEditar
+            // btnEdit
             // 
-            btnEditar.FlatStyle = FlatStyle.Popup;
-            btnEditar.Font = new Font("Cascadia Code", 9F);
-            btnEditar.ForeColor = Color.FromArgb(255, 121, 198);
-            btnEditar.Location = new Point(446, 256);
-            btnEditar.Name = "btnEditar";
-            btnEditar.Size = new Size(75, 23);
-            btnEditar.TabIndex = 6;
-            btnEditar.TabStop = false;
-            btnEditar.Text = "Editar";
-            btnEditar.UseVisualStyleBackColor = true;
+            btnEdit.FlatStyle = FlatStyle.Popup;
+            btnEdit.Font = new Font("Cascadia Code", 9F);
+            btnEdit.ForeColor = Color.FromArgb(255, 121, 198);
+            btnEdit.Location = new Point(386, 256);
+            btnEdit.Name = "btnEdit";
+            btnEdit.Size = new Size(75, 23);
+            btnEdit.TabIndex = 6;
+            btnEdit.TabStop = false;
+            btnEdit.Text = "Editar";
+            btnEdit.UseVisualStyleBackColor = true;
             // 
-            // btnApagar
+            // btnDelete
             // 
-            btnApagar.FlatStyle = FlatStyle.Popup;
-            btnApagar.Font = new Font("Cascadia Code", 9F);
-            btnApagar.ForeColor = Color.FromArgb(255, 121, 198);
-            btnApagar.Location = new Point(527, 256);
-            btnApagar.Name = "btnApagar";
-            btnApagar.Size = new Size(75, 23);
-            btnApagar.TabIndex = 7;
-            btnApagar.TabStop = false;
-            btnApagar.Text = "Apagar";
-            btnApagar.UseVisualStyleBackColor = true;
+            btnDelete.FlatStyle = FlatStyle.Popup;
+            btnDelete.Font = new Font("Cascadia Code", 9F);
+            btnDelete.ForeColor = Color.FromArgb(255, 121, 198);
+            btnDelete.Location = new Point(472, 256);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new Size(75, 23);
+            btnDelete.TabIndex = 7;
+            btnDelete.TabStop = false;
+            btnDelete.Text = "Apagar";
+            btnDelete.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -186,19 +186,19 @@
             label4.TabIndex = 11;
             label4.Text = "Endereço:";
             // 
-            // textBox1
+            // txtAddress
             // 
-            textBox1.Location = new Point(191, 155);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(356, 23);
-            textBox1.TabIndex = 3;
+            txtAddress.Location = new Point(191, 155);
+            txtAddress.Name = "txtAddress";
+            txtAddress.Size = new Size(356, 23);
+            txtAddress.TabIndex = 3;
             // 
-            // textBox2
+            // txtNumber
             // 
-            textBox2.Location = new Point(191, 184);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(49, 23);
-            textBox2.TabIndex = 4;
+            txtNumber.Location = new Point(191, 184);
+            txtNumber.Name = "txtNumber";
+            txtNumber.Size = new Size(49, 23);
+            txtNumber.TabIndex = 4;
             // 
             // label5
             // 
@@ -228,12 +228,12 @@
             label7.TabIndex = 17;
             label7.Text = "RG:";
             // 
-            // textBox5
+            // txtBurgh
             // 
-            textBox5.Location = new Point(325, 184);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(222, 23);
-            textBox5.TabIndex = 18;
+            txtBurgh.Location = new Point(325, 184);
+            txtBurgh.Name = "txtBurgh";
+            txtBurgh.Size = new Size(222, 23);
+            txtBurgh.TabIndex = 18;
             // 
             // label10
             // 
@@ -257,21 +257,21 @@
             label9.TabIndex = 23;
             label9.Text = "CPF:";
             // 
-            // maskedTextBox2
+            // txtMaskRg
             // 
-            maskedTextBox2.Location = new Point(192, 213);
-            maskedTextBox2.Mask = "00.000.000-0";
-            maskedTextBox2.Name = "maskedTextBox2";
-            maskedTextBox2.Size = new Size(100, 23);
-            maskedTextBox2.TabIndex = 25;
+            txtMaskRg.Location = new Point(192, 213);
+            txtMaskRg.Mask = "00.000.000-0";
+            txtMaskRg.Name = "txtMaskRg";
+            txtMaskRg.Size = new Size(100, 23);
+            txtMaskRg.TabIndex = 25;
             // 
-            // maskedTextBox3
+            // txtMaskCpf
             // 
-            maskedTextBox3.Location = new Point(340, 213);
-            maskedTextBox3.Mask = "000.000.000-00";
-            maskedTextBox3.Name = "maskedTextBox3";
-            maskedTextBox3.Size = new Size(100, 23);
-            maskedTextBox3.TabIndex = 26;
+            txtMaskCpf.Location = new Point(340, 213);
+            txtMaskCpf.Mask = "000.000.000-00";
+            txtMaskCpf.Name = "txtMaskCpf";
+            txtMaskCpf.Size = new Size(100, 23);
+            txtMaskCpf.TabIndex = 26;
             // 
             // Employees
             // 
@@ -279,24 +279,24 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(40, 42, 54);
             ClientSize = new Size(669, 315);
-            Controls.Add(maskedTextBox3);
-            Controls.Add(maskedTextBox2);
+            Controls.Add(txtMaskCpf);
+            Controls.Add(txtMaskRg);
             Controls.Add(label9);
             Controls.Add(label10);
-            Controls.Add(textBox5);
+            Controls.Add(txtBurgh);
             Controls.Add(label7);
-            Controls.Add(textBox2);
+            Controls.Add(txtNumber);
             Controls.Add(label5);
-            Controls.Add(textBox1);
+            Controls.Add(txtAddress);
             Controls.Add(label4);
             Controls.Add(txtEmail);
             Controls.Add(label3);
             Controls.Add(label2);
-            Controls.Add(btnApagar);
-            Controls.Add(btnEditar);
-            Controls.Add(btnBuscar);
-            Controls.Add(btnSalvar);
-            Controls.Add(maskedTextBox1);
+            Controls.Add(btnDelete);
+            Controls.Add(btnEdit);
+            Controls.Add(btnSearch);
+            Controls.Add(btnSave);
+            Controls.Add(txtMaskPhone);
             Controls.Add(btnAdd);
             Controls.Add(txtName);
             Controls.Add(label1);
@@ -316,24 +316,24 @@
         private Label label1;
         private TextBox txtName;
         private Button btnAdd;
-        private MaskedTextBox maskedTextBox1;
-        private Button btnSalvar;
-        private Button btnBuscar;
-        private Button btnEditar;
-        private Button btnApagar;
+        private MaskedTextBox txtMaskPhone;
+        private Button btnSave;
+        private Button btnSearch;
+        private Button btnEdit;
+        private Button btnDelete;
         private Label label2;
         private Label label3;
         private TextBox txtEmail;
         private Label label4;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox txtAddress;
+        private TextBox txtNumber;
         private Label label5;
         private ImageList imageList1;
         private Label label7;
-        private TextBox textBox5;
+        private TextBox txtBurgh;
         private Label label10;
         private Label label9;
-        private MaskedTextBox maskedTextBox2;
-        private MaskedTextBox maskedTextBox3;
+        private MaskedTextBox txtMaskRg;
+        private MaskedTextBox txtMaskCpf;
     }
 }

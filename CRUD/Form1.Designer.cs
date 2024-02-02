@@ -33,6 +33,7 @@
             opçõesToolStripMenuItem = new ToolStripMenuItem();
             funcionáriosToolStripMenuItem = new ToolStripMenuItem();
             sairToolStripMenuItem = new ToolStripMenuItem();
+            lblTestDb = new Label();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -66,12 +67,24 @@
             sairToolStripMenuItem.Text = "Sair";
             sairToolStripMenuItem.Click += sairToolStripMenuItem_Click;
             // 
+            // lblTestDb
+            // 
+            lblTestDb.AutoSize = true;
+            lblTestDb.BackColor = Color.FromArgb(241, 250, 140);
+            lblTestDb.Font = new Font("Cascadia Code", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblTestDb.Location = new Point(15, 43);
+            lblTestDb.Name = "lblTestDb";
+            lblTestDb.Size = new Size(419, 25);
+            lblTestDb.TabIndex = 1;
+            lblTestDb.Text = "Testando conexão com o banco de dados";
+            // 
             // MainWindow
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(446, 284);
+            Controls.Add(lblTestDb);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             MaximizeBox = false;
@@ -91,5 +104,6 @@
         private ToolStripMenuItem opçõesToolStripMenuItem;
         private ToolStripMenuItem funcionáriosToolStripMenuItem;
         private ToolStripMenuItem sairToolStripMenuItem;
+        private Label lblTestDb;
     }
 }

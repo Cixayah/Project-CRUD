@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,9 +16,25 @@ namespace CRUD
         public Employees()
         {
             InitializeComponent();
+            txtName.Enabled = false;
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(DatabaseManager.DatabaseConnection.ConnectionString))
+                {
+                    connection.Open();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error connecting to the database: {ex.Message}");
+            }
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
         {
 
         }
